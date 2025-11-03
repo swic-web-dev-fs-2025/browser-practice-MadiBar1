@@ -6,11 +6,18 @@
     <title>Hello Browser JavaScript</title>
   </head>
   <body>
-    <h1 id="name">Madison Harris</h1>
+    <h1 id="name-display">Madison Harris</h1>
     <button id="count-add">Increment +1</button>
     <button id="count-subtract">Decrement -1</button>
     <button id="reset-count">Reset</button>
-    <p id="click-count">Button clicks: 0</p>
+    <p id="click-count" class="text-xl font-bold">Button clicks: 0</p>
+    <textarea
+      id="name-input"
+      rows="4"
+      cols="50"
+      placeholder="Change Name Here"
+    ></textarea>
+    <button id="reset-name">Reset Name</button>
 
     <script type="module" src="./src/main.js"></script>
   </body>
