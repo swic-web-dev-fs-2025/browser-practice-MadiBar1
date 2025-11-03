@@ -8,6 +8,14 @@ const button = document.getElementById("change-greeting");
 const countElement = document.getElementById("click-count");
 const button2 = document.getElementById("reset-count");
 const heading = document.querySelector("h1");
+const customGreeting = document.getElementById("custom-greeting");
+
+function updateCustomGreeting() {
+  const newGreeting = customGreeting.value;
+  if (newGreeting.trim() !== "") {
+    greetingElement.textContent = newGreeting;
+  }
+}
 
 function updateGreeting() {
   clickCount++;
@@ -27,3 +35,4 @@ function resetCount() {
 
 button.addEventListener("click", updateGreeting);
 button2.addEventListener("click", resetCount);
+customGreeting.addEventListener("input", updateCustomGreeting);
