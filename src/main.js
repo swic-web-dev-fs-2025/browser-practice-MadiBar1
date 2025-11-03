@@ -16,6 +16,11 @@ function updateName() {
   nameDisplay.textContent = `Hello, ${nameInput.value}!`;
 }
 
+function resetName() {
+  nameInput.value = "";
+  nameDisplay.textContent = "Madison Harris";
+}
+
 //Increment Button
 function incrementCount() {
   clickCount++;
@@ -41,4 +46,5 @@ function resetCount() {
 button1.addEventListener("click", incrementCount);
 button2.addEventListener("click", decrementCount);
 button3.addEventListener("click", resetCount);
+button4.addEventListener("click", resetName);
 nameInput.addEventListener("input", updateName);
